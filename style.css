@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+body {
+          line-height: 1.5;
+          background: hsl(0, 0%, 95%);
+
+          height: 100%;
+}
+
+img {
+          width: 30%;
+}
+
+h2 {
+          color: hsl(0, 0%, 95%);
+          font-family: "Big Shoulders Display", cursive;
+          text-transform: uppercase;
+          font-size: 2rem;
+}
+
+p {
+          color: hsla(0, 0%, 100%, 0.75);
+          font-family: "Lexend Deca", sans-serif;
+          font-size: 0.8rem;
+}
+
+button {
+          margin-top: 45%;
+          padding: 10px 20px;
+          border-radius: 50px;
+          outline: none;
+          border: none;
+          font-family: "Lexend Deca", sans-serif;
+          font-size: 0.75rem;
+          cursor: pointer;
+}
+
+button:hover {
+          background: inherit;
+          color: #fff;
+          border: 1px solid #fff;
+          transition: all 300ms ease-in;
+}
+
+.container {
+          position: relative;
+          width: 80%;
+          height: 100vh;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+}
+
+#sedan-section,
+#suv-section,
+#luxury-section {
+          max-width: 280px;
+          height: auto;
+          padding: 40px;
+}
+
+#sedan-section {
+          background: hsl(31, 77%, 52%);
+}
+
+#suv-section {
+          background: hsl(184, 100%, 22%);
+}
+#luxury-section {
+          background: hsl(179, 100%, 13%);
+}
+
+.sedan-info,
+.suv-info,
+.luxury-info {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+}
+
+.btn {
+          color: hsl(31, 77%, 52%);
+}
+
+.btn-1 {
+          color: hsl(184, 100%, 22%);
+}
+
+.btn-2 {
+          color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          font-size: 13px;
+          text-align: center;
+          padding-bottom: 10px;
+}
+.attribution a {
+          color: hsl(228, 45%, 44%);
+          text-decoration: none;
+}
+
+.attribution a:hover {
+          color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 600px) {
+          body {
+                    overflow: scroll;
+          }
+
+          .container {
+                    flex-direction: column;
+                    height: 100%;
+                    margin: 40px auto;
+          }
+
+          .attribution {
+                    position: inherit;
+                    font-size: 11px;
+          }
+}
